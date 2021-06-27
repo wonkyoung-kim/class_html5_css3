@@ -1,0 +1,12 @@
+//mixin.scss
+@mixin button($width:80px, $height:30px, $bg:gray, $fontSize:14px) {
+    display: block;
+    width: $width;
+    height: $height;
+    line-height: $height;
+    border-radius: $height/2;
+    text-align: center;
+    font-size: $fontSize;
+    color: #fff;
+    background: $bg;
+}
