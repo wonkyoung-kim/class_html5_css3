@@ -6,7 +6,8 @@
 }
 
 section {
-    width: 50vw;
-    height: 50vh;
+    width: 30vmax;
+    height: 300px;
+    margin: 100px auto;
     background: aqua;
 }
