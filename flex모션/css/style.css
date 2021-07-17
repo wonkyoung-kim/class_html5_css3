@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh; }
+  section article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    background: #111;
+    font-size: 10vw;
+    color: #fff;
+    transition: 1s; }
+    section article:hover {
+      flex: 2; }
+      section article:hover video {
+        opacity: 1; }
+    section article video {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.3;
+      transition: 1s; }
+
+/*# sourceMappingURL=style.css.map */
