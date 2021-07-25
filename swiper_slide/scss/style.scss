@@ -47,4 +47,37 @@
             }
         }
     }
+
+    .swiper-button-prev{
+        top: auto;
+        left: auto;
+        bottom: 5vh;
+        right: calc(5vw + 50px);
+        filter: grayscale(100%) brightness(300%);
+        transform: scale(0.5);
+    }
+    .swiper-button-next {
+        top: auto;
+        left: auto;
+        bottom: 5vh;
+        right: 5vw;
+        filter: grayscale(100%) brightness(300%);
+        transform: scale(0.5);
+    }
+
+    .swiper-pagination {
+        bottom: auto;
+        left: auto;
+        top: 5vh;
+        right: 5vw;
+        width: auto;
+        font: 18px/1 'orbitron';
+        color: #eee;
+        letter-spacing: 1px;
+
+        .swiper-pagination-current {
+            font-size: 30px;
+            color: #fff;
+        }
+    }
 }

@@ -46,5 +46,31 @@ a {
         align-content: center;
         font-size: 100px;
         color: #fff; }
+  #wrap .swiper-button-prev {
+    top: auto;
+    left: auto;
+    bottom: 5vh;
+    right: calc(5vw + 50px);
+    filter: grayscale(100%) brightness(300%);
+    transform: scale(0.5); }
+  #wrap .swiper-button-next {
+    top: auto;
+    left: auto;
+    bottom: 5vh;
+    right: 5vw;
+    filter: grayscale(100%) brightness(300%);
+    transform: scale(0.5); }
+  #wrap .swiper-pagination {
+    bottom: auto;
+    left: auto;
+    top: 5vh;
+    right: 5vw;
+    width: auto;
+    font: 18px/1 'orbitron';
+    color: #eee;
+    letter-spacing: 1px; }
+    #wrap .swiper-pagination .swiper-pagination-current {
+      font-size: 30px;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
