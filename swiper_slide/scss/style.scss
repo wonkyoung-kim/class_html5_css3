@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@100&display=swap');
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(45deg, #ac8bef, #2ddbdc);
+    h1 {
+        font: normal 24px/1 'orbitron';
+        color: #fff;
+        letter-spancing: 1px;
+        position: absolute;
+        left: 5vw;
+        top: 7vh;
+        
+        span {
+            opacity: 0.5;
+        }
+    }
+
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 20vh;
+
+            .inner {
+                width: 100%;
+                height: 100%;
+                background: rgba(255,255,255,0.5);
+                border: 1px solid #fff;
+                opacity: 0.5;
+                padding: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                font-size: 100px;
+                color: #fff;
+            }
+        }
+    }
+}
