@@ -13,5 +13,12 @@ const swiper = new Swiper('#wrap', {
         el: ".swiper-pagination", //페이징메뉴 추가
         type: "fraction", //숫자로 보이게
         clickable: true, //클릭기능 추가
+    },
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 50, //y축 회전각도
+        slideShadows: false, //슬라이드 좌우 그림자 유무
+        depth: 400, //원근감 깊이정도
+        stretch: -100, //양수면 당겨지고, 음수면 벌어짐
     }
 });
