@@ -34,17 +34,44 @@
             .inner {
                 width: 100%;
                 height: 100%;
-                background: rgba(255,255,255,0.5);
-                border: 1px solid #fff;
+                background: #fff;
                 opacity: 0.4;
                 padding: 30px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-content: center;
-                font-size: 100px;
                 color: #fff;
                 transition: 1s;
+
+                .con {
+                    position: relative;
+                    z-index: 5;
+
+                    img {
+                        width: 100%; 
+                        hieght: 100%;
+                    }
+
+                    h2 {
+                        font: normal 32px/1.2 'roboto';
+                        color: #111;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 30px;
+                            height: 1px;
+                            background-color: #111;
+                            margin-top: 15px;
+                            transition: 1s 0.5s;
+                        }
+                    }
+
+                    p {
+                        font: normal 14px/1.3 'arial';
+                        color: #aaa;
+                        letter-spacing: 1px;
+                    }
+                }
             }
 
             &.swiper-slide-prev, &.swiper-slide-next {
@@ -56,6 +83,9 @@
             &.swiper-slide-active {
                 .inner {
                     opacity: 1;
+                    .con h2::after {
+                        width: 100px;
+                    }
                 }
             }
         }
