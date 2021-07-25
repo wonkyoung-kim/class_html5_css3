@@ -20,5 +20,36 @@ const swiper = new Swiper('#wrap', {
         slideShadows: false, //슬라이드 좌우 그림자 유무
         depth: 400, //원근감 깊이정도
         stretch: -100, //양수면 당겨지고, 음수면 벌어짐
+    },
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: true,
     }
 });
+
+const btnStart = document.querySelector('.btn-start');
+const btnStop = document.querySelector('.btn-stop');
+
+btnStart.addEventListener('click', e=>{
+    btnStop.classList.remove('on');
+    e.currentTarget.classList.add('on');
+    swiper.autoplay.start();
+})
+
+btnStop.addEventListener('click', e=>{
+    btnStart.classList.remove('on');
+    e.currentTarget.classList.add('on');
+    swiper.autoplay.stop();
+})
+
+const btnPrev = document.querySelector('.swiper-button-prev');
+const btnNext = document.querySelector('.swiper-button-next');
+
+swiper.on('sliderMove', activationStop);
+btnPrev.addEventListener('click', activationStop);
+btnNext.addEventListener('click', activationStop);
+
+function activationStop(){
+    btnStart.classList.remove('on');
+    btnStop.classList.add('on');
+}
