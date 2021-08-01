@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+#wrap {
+  width: 500px;
+  border: 1px solid #333;
+  margin: 50px auto;
+  padding: 50px; }
+  #wrap path {
+    fill: rgba(0, 0, 0, 0.1);
+    stroke-width: 1;
+    stroke: #000;
+    stroke-dasharray: 1273;
+    stroke-dashoffset: 1273;
+    transition: 5s; }
+  #wrap:hover path {
+    stroke-dashoffset: 0; }
+
+#wrap2 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  margin: 100px auto;
+  padding: 50px; }
+  #wrap2 path {
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 1;
+    stroke: red;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transition: stroke-dashoffset 5s 0s, fill 2s 2s; }
+  #wrap2:hover path {
+    fill: black;
+    stroke-dashoffset: 0; }
+
+/*# sourceMappingURL=style.css.map */

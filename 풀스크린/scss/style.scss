@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Shadows+Into+Light&display=swap');
+
+header {
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #888;
+    color: #fff;
+    h1 {
+        position: absolute;
+        left: 6vw; top: 50%;
+        margin-top: -12px;
+        font: bold 24px/1 'Shadows Into Light';
+        color: #fff;
+    }
+    #gnb {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translateX(-50%);
+        margin-top: -8px;
+        li {
+            float: left;
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0px;
+            }
+            a {
+                letter-spacing: 1px;
+                font: bold 16px/1 'Shadows Into Light';
+                color: #fff;
+            }
+        }
+    }
+    .sns {
+        position: absolute;
+        right: 6vw; top: 50%;
+        margin-top: -10px;
+        li {
+            float: left;
+            margin-left: 20px;
+            a {
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+    }
+}
+   
+figure {
+    position: absolute;
+    top:0px; left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .8;
+    }
+    .txt {
+        position: absolute;
+        left: 6vw; top: 50%;
+        transform: translateY(-60%);
+        p {
+            font: 8vw/1.2 'Permanent Marker';
+            color: #fff;
+            opacity: 1;
+        }
+        ul {
+            margin-top: 20px;
+            li {
+                float: left;
+                margin-right: 30px;
+                font: 16px/1 'arial';
+                color: #fff;
+                letter-spacing: 1px;
+                i {
+                    margin-right: 10px;
+                    font-size: 20px;
+                    color: #fff;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 5vh; left: 50%;
+    transform: translateX(-50%);
+    margin-top: -6px;
+    font: 12px/1 'arial';
+    color: #ddd;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    width: 30vmax;
+    height: 300px;
+    margin: 100px auto;
+    background: aqua;
+}
