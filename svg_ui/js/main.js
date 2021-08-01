@@ -18,7 +18,7 @@ btnUp.addEventListener('click', e=>{
     let next_index;
     
     //현재 활성화 패널의 순번이 마지막 패널이면 값을 0으로 고정 아니면 1씩 증가
-    (current_index != len) ? next_index = current_index++ : next_index=0;
+    (current_index != len) ? next_index = current_index+1 : next_index=0;
 
     //현재 활성화된 패널의 on을 지우고 동시에 top을 붙여서 
     //위쪽으로 날라가는 모션을 주면서 비활성화
