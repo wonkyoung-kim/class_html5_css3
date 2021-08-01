@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import 'reset';
+
+#wrap {
+    width: 500px; border: 1px solid #333;
+    margin: 50px auto; padding: 50px;
+
+    path {
+        fill: rgba(0,0,0,0.1);
+        stroke-width: 1;
+        stroke: #000;
+        stroke-dasharray: 1273;
+        stroke-dashoffset: 1273;
+        transition: 5s;
+    }
+
+    &:hover path {
+        stroke-dashoffset: 0;
+    }
+}
+
