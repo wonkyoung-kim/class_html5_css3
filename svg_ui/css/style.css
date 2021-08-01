@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Rajdhani:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  outline: 0;
+  text-decoration: none; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 25vh 10vw 10vh; }
+  body main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #eee; }
+    body main h1 {
+      font: 2vw/1 'Rajdhani';
+      color: #555;
+      position: absolute;
+      left: 0px;
+      top: -3vw; }
+      body main h1::before {
+        content: '';
+        display: block;
+        width: 4vw;
+        height: 1px;
+        background: #111;
+        position: absolute;
+        left: 0px;
+        top: -10px; }
+
+/*# sourceMappingURL=style.css.map */
