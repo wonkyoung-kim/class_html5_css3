@@ -1,0 +1,141 @@
+@charset 'utf-8';
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body { 
+    .wrap {
+        width: 340px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgba(0,0,0,.1);
+        background-color: #fff;
+        .menu {
+            width: 100%;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            a {
+                color: #777;
+                font-size: 20px;
+                &:nth-of-type(1) {float: left;}
+                &:nth-of-type(2) {float: right;}
+            }
+        }
+        
+        .profile {
+            width: 100%;
+            text-align: center;
+            .pic {
+                overflow: hidden;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                border-radius: 50%;
+                box-shadow: 5px 15px 30px rgba(0,255,255, .4);
+                img {
+                    width: 100%;
+                }
+            }
+            h1 {
+                margin-bottom: 5px;
+                font: bold 22px/1 'arial';
+                color: #555;
+            }
+            p {
+                text-transform: uppercase;
+                font: normal 12px/1 'arial';
+                color: #bbb;
+                margin-bottom: 30px;
+            }
+            a {
+                display: block;
+                width: 180px;
+                height: 40px;
+                margin: 0 auto 20px;
+                font: bold 12px/40px 'arial';
+                color: #fff;
+                border-radius: 20px;
+                box-shadow: 5px 10px 20px rgba(120,232,252, 0.4);
+                background: linear-gradient(45deg, #78e8fc, #80c7f0);
+            }
+        }
+
+        .contact {
+            width: 100%;
+            margin-bottom: 25px;
+            li {
+                width: 100%;
+                padding: 10px 20px;
+                border-bottom: 1px solid #eee;
+                font-size: 0;
+                &:last-child {
+                    border: none;
+                }
+                i {
+                    margin-right: 20px;
+                    font-size: 15px;
+                    color: #555;
+                }
+                span {
+                    font: 11px/1 'orbitron';
+                    color: #555;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        .others {
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 0;
+            a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #ddd;
+                margin: 0 10px;
+                text-indent: -99999px;
+                opacity: 0.4;
+                &.on {
+                    opacity: 1;
+                }
+                &:nth-of-type(1) {
+                    background: #35e0f7;
+                    box-shadow: 5px 5px 10px rgba(53, 224, 247, .7);
+                }
+                &:nth-of-type(2) {
+                    background: #55f5cd;
+                    box-shadow: 5px 5px 10px rgba(85, 245, 205, .7);
+                }
+                &:nth-of-type(3) {
+                    background-color: #ff80df;
+                    box-shadow: 5px 5px 10px rgba(255, 128, 223, 0.7);
+                }
+                &:nth-of-type(4) {
+                    background-color: #a794fd;
+                    box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
+                }
+            }
+        }
+    }
+
+    &.member1 {
+        background-color: lightcyan;
+        .pic {
+            box-shadow: 5px 15px 30px rgba(0,255,255, .4);
+        }
+    }
+    &.member2 {
+        background-color: lightgoldenrodyellow;
+        .pic {
+            box-shadow: 5px 15px 30px rgba(51, 255, 0, 0.3);
+        }
+    }
+}
+
