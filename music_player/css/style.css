@@ -1,6 +1,7 @@
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  box-sizing: border-box; }
 
 ul, ol {
   list-style: none; }
@@ -41,7 +42,7 @@ figure {
     height: 65vh;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 150%;
     margin-top: -32vh;
     margin-left: -10vw; }
     figure section article {
