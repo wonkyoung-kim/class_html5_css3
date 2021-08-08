@@ -10,8 +10,26 @@ let active = 0;
 //패널의 갯수에 따라 반복을 돌며 회전값 적용해서 초기모양 설정
 for(let i=0; i<len; i++) {
     const pic = list[i].querySelector('.pic');
+    const play = list[i].querySelector('.play');
+    const pause = list[i].querySelector('.pause');
+    const load = list[i].querySelector('.load');
+
     list[i].style.transform = `rotate(${deg*i}deg) translateY(-100vh)`;
     pic.style.backgroundImage = `url(img/member${i+1}.jpg)`;
+
+    play.addEventListener('click', e=>{
+        e.currentTarget.closest('article').querySelector('.pic').classList.add('on');
+        e.currentTarget.closest('article').querySelector('audio').play();
+    });
+    pause.addEventListener('click', e=>{
+        e.currentTarget.closest('article').querySelector('.pic').classList.remove('on');
+        e.currentTarget.closest('article').querySelector('audio').pause();
+    });
+    load.addEventListener('click', e=>{
+        e.currentTarget.closest('article').querySelector('.pic').classList.add('on');
+        e.currentTarget.closest('article').querySelector('audio').load();
+        e.currentTarget.closest('article').querySelector('audio').play();
+    });
 }
 
 //이전버튼 클릭시
