@@ -75,6 +75,30 @@ figure {
           display: flex;
           justify-content: center;
           align-items: center; }
+          figure section article .inner .pic::before, figure section article .inner .pic::after {
+            content: '';
+            display: block;
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-image: inherit;
+            background-repeat: inherit;
+            background-position: center;
+            background-size: cover; }
+          figure section article .inner .pic::before {
+            transform: translateY(10%);
+            filter: blur(20px) brightness(1.6); }
+          figure section article .inner .pic .dot {
+            width: 3vw;
+            height: 3vw;
+            border-radius: 50%;
+            background-color: #e4f1ff;
+            position: relative;
+            z-index: 3;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3); }
       figure section article.on .inner {
         opacity: 0.9;
         transform: scale(1.1); }

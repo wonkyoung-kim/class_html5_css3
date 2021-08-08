@@ -8,4 +8,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px; left: 0px;
+        background-image: inherit;
+        background-repeat: inherit;
+        background-position: center;
+        background-size: cover;
+    }
+    &::before {
+        transform: translateY(10%);
+        filter: blur(20px) brightness(1.6);
+    }
+    
+    .dot {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        background-color: #e4f1ff;
+        position: relative;
+        z-index: 3;
+        box-shadow: inset 5px 5px 10px rgba(0,0,0,0.3);
+    }
 }
