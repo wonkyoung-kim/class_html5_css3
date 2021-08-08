@@ -29,6 +29,7 @@ section {
             align-content: space-between;
 
             @import 'music_pic';
+            @import 'music_info';
         }
 
         &.on {
