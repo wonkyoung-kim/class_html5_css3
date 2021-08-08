@@ -23,6 +23,12 @@ section {
             opacity: .6;
             transform: scale(0.8);
             transition: opacity 1s, transform 1s;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+
+            @import 'music_pic';
         }
 
         &.on {

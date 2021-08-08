@@ -9,7 +9,9 @@ let active = 0;
 
 //패널의 갯수에 따라 반복을 돌며 회전값 적용해서 초기모양 설정
 for(let i=0; i<len; i++) {
+    const pic = list[i].querySelector('.pic');
     list[i].style.transform = `rotate(${deg*i}deg) translateY(-100vh)`;
+    pic.style.backgroundImage = `url(img/member${i+1}.jpg)`;
 }
 
 //이전버튼 클릭시
