@@ -4,7 +4,6 @@
 figure {
     width: 100%;
     height: 100vh;
-    min-height: 600px;
     overflow: hidden;
     position: relative;
     background: linear-gradient(25deg, violet, pink);
@@ -34,6 +33,7 @@ figure {
     }
 
     @import 'panel';
+    @import 'button';
     
     >p {
         position: absolute;

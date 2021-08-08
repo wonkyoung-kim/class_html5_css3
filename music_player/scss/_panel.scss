@@ -5,6 +5,7 @@ section {
     left: 50%; top: 150%;
     margin-top: -32vh;
     margin-left: -10vw;
+    transition: 0.5s;
 
     article {
         width: 100%;
@@ -20,6 +21,15 @@ section {
             background: #f0f7ff;
             padding: 5vh 2.5vw 8vh;
             opacity: .6;
+            transform: scale(0.8);
+            transition: opacity 1s, transform 1s;
+        }
+
+        &.on {
+            .inner {
+                opacity: 0.9;
+                transform: scale(1.1);
+            }
         }
     }
 }
