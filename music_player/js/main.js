@@ -1,5 +1,6 @@
 const frame = document.querySelector('section');
 const list = frame.querySelectorAll('article');
+const audio = frame.querySelectorAll('audio');
 const len = list.length;
 const deg = 360 / len;
 const prev = document.querySelector('.btnPrev');
@@ -33,15 +34,18 @@ for(let i=0; i<len; i++) {
 }
 
 //이전버튼 클릭시
-prev.addEventListener('click', ()=>{
-    frame.style.transform=`rotate(${deg* ++num}deg)`;
+prev.addEventListener('click', (e)=>{
+    initMusic();
 
+    frame.style.transform=`rotate(${deg* ++num}deg)`;
     (active == 0) ? active=len-1 : active--;
     activation(active, list);
 })
 
 //다음버튼 클릭시
 next.addEventListener('click', ()=>{
+    initMusic();
+
     frame.style.transform=`rotate(${deg* --num}deg)`;
     (active == len-1) ? active=0 : active++;
     activation(active, list);
@@ -55,4 +59,12 @@ function activation(index, arr){
     arr[index].classList.add('on');
 }
 
+//음악 초기화 함수 정의
+function initMusic(){
+    for(let el of audio){
+        el.pause();
+        el.load();
+        el.closest('article').querySelector('.pic').classList.remove('on');
+    }
+}
 
