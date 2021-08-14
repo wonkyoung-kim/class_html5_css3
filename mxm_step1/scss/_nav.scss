@@ -1,0 +1,29 @@
+.list {
+    width: 100px;
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-left: -250px;
+    margin-top: -200px;
+    transform: skewX(50deg);
+
+    li {
+        width: 40px;
+        height: 80px;
+        float: left;
+        margin: 5px;
+        background: #fff;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:nth-of-type(2n) {
+            transform: translateY(45px);
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+        &.on {
+            opacity: 1;
+        }
+    }
+}

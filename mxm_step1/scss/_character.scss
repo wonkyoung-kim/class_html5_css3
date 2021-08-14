@@ -1,0 +1,16 @@
+.pic li {
+    position: absolute;
+    top: -400px; right: -300px;
+    opacity: 0;
+    transition: 1s;
+
+    &.on {
+        opacity: 1;
+        top: 0; right: -100px;
+    }
+
+    img {
+        position: relative;
+        width: 70vmax;
+    }
+}

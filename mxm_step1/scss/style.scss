@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import "reset";
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        position: absolute;
+        top: 8vh;
+        left: 6vmax;
+        z-index: 2;
+
+        img {
+            width: 12vmax;
+        }
+    }
+
+    figure {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px; left: 0px;
+        overflow: hideen;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @import "text";
+    @import "nav";
+    @import "character";
+
+    .deco1 {
+        position: absolute;
+        left: 6vmax;
+        bottom: 40vh;
+        width: 200px;
+    }
+    .deco2 {
+        position: absolute;
+        left: 6vmax;
+        top: 50%;
+        margin-top: -300px;
+    }
+    .deco3 {
+        position: absolute;
+        right: -400px;
+        top: 0px;
+    }
+}

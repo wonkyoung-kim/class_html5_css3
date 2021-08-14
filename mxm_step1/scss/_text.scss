@@ -1,0 +1,25 @@
+.title li {
+    position: absolute;
+    bottom: 20vh;
+    left: -6vmax;
+    opacity: 0;
+    transition: 0.5s;
+
+    &.on {
+        left: 6vmax;
+        opacity: 1;
+    }
+
+    p {
+        font: 90px/1 'Ubuntu';
+        color: #fff;
+        letter-spacing: -3px;
+        margin-bottom: 5px;
+    }
+
+    span {
+        font: bold 30px/1 '맑은 고딕';
+        color: aqua;
+        margin-left: 10px;
+    }
+}
