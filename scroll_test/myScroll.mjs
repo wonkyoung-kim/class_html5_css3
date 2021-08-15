@@ -26,6 +26,7 @@ window.addEventListener('scroll', ()=>{
     sec_arr.forEach((el, index)=>{
         if(scroll >= el){
             activation(btn, index);
+            activation(sec, index);
         }
     })
 });

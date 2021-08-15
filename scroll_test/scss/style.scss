@@ -9,6 +9,23 @@ section {
     &:nth-of-type(2) {
         height: 800px;
         background: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 600px;
+        
+        article {
+            width: 400px;
+            height: 200px;
+            background: #fff;
+            transform: rotate(180deg);
+            opacity: 0;
+            transition: .5s;
+        }
+        &.on article {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
     }
     &:nth-of-type(3) {
         height: 900px;
